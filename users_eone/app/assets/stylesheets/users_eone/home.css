@@ -1,0 +1,26 @@
+body{
+	background-color: #34495e;
+	padding: 100px;
+}
+.container {
+	padding: 100px;
+	text-align: center;
+	background-color: #fff;
+	position: relative;
+}
+.users_list {
+    padding: 70px;
+}
+.users_page_links a {
+	text-decoration: none; font: menu;
+    display: inline-block; padding: 2px 8px;
+    background: ButtonFace; color: ButtonText;
+    border-style: solid; border-width: 2px;
+    border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}
+.users_page_links:active {
+    border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+}
+#notice {
+  color: green;
+}

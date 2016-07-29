@@ -1,0 +1,8 @@
+<% users.each do|user| %>
+	<div class="col-md-12">
+		<div class="col-md-3"><%= user.id %></div>
+		<div class="col-md-3"><a href="<%= main_app.user_path(user) %>"><%= user.name %></a></div>
+		<div class="col-md-3"><%= user.email %></div>
+		<div class="col-md-3"><%= user.updated_at %>(<a href="<%= main_app.edit_user_path(user) %>">Edit</a>)</div>
+	</div>
+<% end %>

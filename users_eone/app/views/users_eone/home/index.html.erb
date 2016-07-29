@@ -1,0 +1,29 @@
+<div class="container">
+	<p id="notice"><%= notice %></p>
+	<div class="col-md-12 home_page">
+		<div class="col-md-4">
+			<a href="/" class="btn btn-default">Home</a>
+		</div>
+		<div class="col-md-4">
+			<a href="/users_eone" class="btn btn-info">Engine 1</a>
+		</div>
+		<div class="col-md-4">
+			<a href="/users_etwo" class="btn btn-default">Engine 2</a>
+		</div>
+	</div>
+	<div class="row users_list">
+			<h1>Fragment Caching done for the products listing.</h1>
+			<div class="col-md-12">
+				<div class="col-md-3">Id</div>
+				<div class="col-md-3">Name</div>
+				<div class="col-md-3">Email</div>
+				<div class="col-md-3">Udated At</div>
+			</div>
+			<% cache [ 'users_eone_engine', @users.order(:updated_at => 'desc').first ] do %>
+				<%= render partial: 'users_eone/users/list', locals: { users: @users } %>
+			<% end %>
+			<div class="users_page_links">
+				<%= paginate @users %>
+			</div>	
+	</div>
+</div>
