@@ -19,7 +19,7 @@
 				<div class="col-md-3">Email</div>
 				<div class="col-md-3">Udated At</div>
 			</div>
-			<% cache [ 'users_eone_engine', @users.order(:updated_at => 'desc').first ] do %>
+			<% cache [ 'users_eone_engine', User.order(:updated_at => 'desc').first ] do %>
 				<%= render partial: 'users_eone/users/list', locals: { users: @users } %>
 			<% end %>
 			<div class="users_page_links">
