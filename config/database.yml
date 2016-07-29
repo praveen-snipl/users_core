@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: users_core_production
-  username: users_core
-  password: <%= ENV['USERS_CORE_DATABASE_PASSWORD'] %>
+  database: users_core_development
+  username: root
+  password: vishal
