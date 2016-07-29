@@ -10,7 +10,6 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql2
   encoding: utf8
   pool: 5
   username: root
@@ -19,6 +18,7 @@ default: &default
 
 development:
   <<: *default
+  adapter: mysql2
   database: users_core_development
 
 # Warning: The database defined as "test" will be erased and
@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: users_core_development
   username: root
   password: vishal
