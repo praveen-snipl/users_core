@@ -21,6 +21,8 @@
   </div>
   <% if @user.present? %>
     <input type="hidden" name="redirect_url" value="<%= request.referer %>">
+  <% else %>
+    <input type="hidden" name="redirect_url" value="/users_eone">
   <% end %>
   <div class="actions">
     <%= f.submit %>

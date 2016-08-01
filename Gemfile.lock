@@ -9,6 +9,8 @@ PATH
   remote: users_etwo
   specs:
     users_etwo (0.0.1)
+      actionpack-action_caching
+      actionpack-page_caching
       kaminari
       rails (~> 4.2.7)
 
@@ -170,13 +172,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionpack-action_caching
-  actionpack-page_caching
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  kaminari
   mysql2 (>= 0.3.13, < 0.5)
   pg (= 0.18.1)
   rails (= 4.2.7)
@@ -188,3 +187,6 @@ DEPENDENCIES
   users_eone!
   users_etwo!
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.12.5

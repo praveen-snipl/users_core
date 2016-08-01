@@ -25,9 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'users_eone', :path => 'users_eone'
 gem 'users_etwo', :path => 'users_etwo'
-gem 'kaminari'
-gem 'actionpack-page_caching'
-gem 'actionpack-action_caching'
 
 gem 'pg', '0.18.1', group: :production
 gem 'rails_12factor', group: :production

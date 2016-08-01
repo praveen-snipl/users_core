@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.2.7"
 
   s.add_dependency "kaminari"
-
+  s.add_dependency 'actionpack-page_caching'
+  s.add_dependency 'actionpack-action_caching'
   s.add_development_dependency "mysql2"
 end
