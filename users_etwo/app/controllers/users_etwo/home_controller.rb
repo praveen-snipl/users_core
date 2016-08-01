@@ -5,7 +5,7 @@ module UsersEtwo
   	caches_action :index, :cache_path  => :get_list_cache
 
     def index
-    	@users = User.Order('id').page(params[:page]).per(30)
+    	@users = User.order('id').page(params[:page]).per(30)
     end
 
     private
