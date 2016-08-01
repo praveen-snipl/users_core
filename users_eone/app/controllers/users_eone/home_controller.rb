@@ -4,7 +4,7 @@ module UsersEone
   class HomeController < ApplicationController
 
     def index
-    	@users = User.Order('id').page(params[:page]).per(30)
+    	@users = User.order('id').page(params[:page]).per(10)
     end
   end
 end
